@@ -4,9 +4,9 @@ import Auxiliary from './../../../hoc/Auxiliary';
 import Button from './../../UI/Button/Button';
 
 class OrderSummary extends Component {
-    componentWillUpdate () {
-        console.log('ordersummary will update');
-    }
+
+    // This could be a functional component, not a class. as we check updates in parent modal component
+
     render() {
         const ingredientSummary = Object.keys(this.props.ingredients)
         .map(key => {
